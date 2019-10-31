@@ -27,7 +27,7 @@ namespace WebApiStaffService1
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            var connection = Configuration.GetConnectionString("DefaultConnectionStuffTest2"); //ProdConnectionStaff || TestConnectionStaff || DefaultConnectionStuffTest2 || DefaultConnection
+            var connection = Configuration.GetConnectionString("ConnectionStuffPROD"); // ProdConnectionStaff || ConnectionStuffDEV ||
 
             services.AddDbContext<EnterpriseStructDbContext>(options =>
             options.UseSqlServer(connection, b => b.MigrationsAssembly("DataLayer")));

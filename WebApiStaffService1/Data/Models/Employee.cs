@@ -13,7 +13,7 @@ namespace WebApiStaffService1.Data.Models
         public Guid Id { get; set; }
         public DateTime CreateOn { get; set; }
         public DateTime ModifyOn { get; set; }
-        public DateTime? Employmentdate { get; set; }
+        public DateTime? EmploymentDate { get; set; }
         public string IntegretionKey { get; set; }
         public bool State { get; set; }
 

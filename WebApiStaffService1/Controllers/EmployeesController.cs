@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebApiStaffService1.Data;
+using WebApiStaffService1.Data.Models;
 using WebApiStaffService1.ViewModels;
 
 namespace WebApiStaffService1.Controllers
@@ -96,7 +97,7 @@ namespace WebApiStaffService1.Controllers
               PositionId = e.PositionId,
               //PhysicalPersonName = e.PhysicalPerson.Name,
               IntegretionKey = e.IntegretionKey,
-              Employmentdate = e.Employmentdate,
+              EmploymentDate = e.EmploymentDate,
               //CreateOn = e.CreateOn,
               //ModifyOn = e.ModifyOn,
               //OrganizationalUnitName = e.OrganizationalUnit.Name,
